@@ -4,9 +4,10 @@
  */
 
 /**
- * Modified by:
+ * Modified by: Elton Emini
  * 
- * Brief summary of modifications:
+ * Brief summary of modifications: exit(1) commented out to keep program running. 
+ * to end program, user must run in background and use command "kill -9 [PID]"
  */
 
 
@@ -20,7 +21,7 @@
  */
 void handle_signal() {
     printf("Received a signal\n");
-    exit(1);
+    // exit(1);
 }
 
 int main() {
